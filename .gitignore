@@ -1,0 +1,37 @@
+# Build artifacts
+build/
+build/work/
+docs
+
+# Simulation artifacts
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+*.vpd
+*.log
+
+# ModelSim/QuestaSim work library
+work/
+_lib.qdb
+_lib*.qdb
+_lib*.qpg
+_lib*.qtl
+_vmake
+_info
+
+# Bender cache
+.bender/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Test vectors (generated)
+tb/vectors/
