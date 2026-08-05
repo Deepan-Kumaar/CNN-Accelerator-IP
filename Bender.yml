@@ -1,0 +1,37 @@
+# A more detailed description of the manifest format `Bender.yml` can be found here:
+# https://github.com/pulp-platform/bender#manifest-format-benderyml
+
+package:
+  name: cnn_accelerator_ips
+  authors:
+    - "deepan45 <deepankumaar2@gmail.com>"
+
+dependencies:
+  axi: { git: "https://github.com/pulp-platform/axi.git", version: 0.38.0 }
+   ibex: { git: "https://github.com/lowRISC/ibex.git", rev: "95b85ddd1c995ace9f89ee42530f9e24820c1051" }
+
+
+
+
+sources:
+  files:
+    - rtl/cnn_accel_pkg.sv
+    - rtl/register_ctrl.sv 
+    - rtl/bram.sv 
+    - rtl/processing_element.sv     
+    - rtl/mac_array.sv     
+    - rtl/dma_controller.sv 
+    - rtl/cnn_accel_top.sv  
+    # - rtl/instr_mem.hex
+    - rtl/instr_mem.sv
+    - rtl/soc_top.sv
+    # - tb/tb_dma_bram_mc.sv
+    # - tb/tb_register_dma.sv
+    - tb/tb_soc_top.sv
+
+    
+    
+  
+  
+  
+  
