@@ -1,7 +1,6 @@
 # Build artifacts
 build/
-build/work/
-docs
+docs/
 
 # Simulation artifacts
 transcript
@@ -22,6 +21,7 @@ _info
 
 # Bender cache
 .bender/
+Bender.lock
 
 # OS generated files
 .DS_Store
@@ -32,6 +32,9 @@ Thumbs.db
 *.swp
 *.swo
 *.bak
+
+# Generated RTL files
+rtl/instr_mem.hex
 
 # Test vectors (generated)
 tb/vectors/

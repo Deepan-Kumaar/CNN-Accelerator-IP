@@ -20,7 +20,7 @@ update:
 	bender update
 	cd $(AXI_PATH) && bender vendor init && cd -
 
- gen:
+gen:
 	python3 sw/golden_model.py
 
 compile-modelsim:
@@ -36,8 +36,8 @@ run-modelsim:
 	$(VSIM) -c -quiet -lib $(WORKLIB) $(TOP) -do "run -all; quit -f"
 
 open-modelsim:
-	$(VSIM) -lib $(WORKLIB) -onfinish final $(TOP)    -do "add wave *;add wave -position insertpoint  \
-sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_output/mem;log * -r;run -all;" 
+	$(VSIM) -lib $(WORKLIB) -onfinish final $(TOP)    -do "add wave *;add wave -position insertpoint \
+	sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_output/mem;log * -r;run -all;" 
 
 clean:
 	rm -rf build

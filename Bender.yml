@@ -8,7 +8,7 @@ package:
 
 dependencies:
   axi: { git: "https://github.com/pulp-platform/axi.git", version: 0.38.0 }
-   ibex: { git: "https://github.com/lowRISC/ibex.git", rev: "95b85ddd1c995ace9f89ee42530f9e24820c1051" }
+  ibex: { git: "https://github.com/lowRISC/ibex.git", rev: "95b85ddd1c995ace9f89ee42530f9e24820c1051" }
 
 
 
