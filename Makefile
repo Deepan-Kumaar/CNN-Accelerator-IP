@@ -37,7 +37,8 @@ run-modelsim:
 
 open-modelsim:
 	$(VSIM) -lib $(WORKLIB) -onfinish final $(TOP)    -do "add wave *;add wave -position insertpoint \
-	sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_output/mem;log * -r;run -all;" 
+	sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_output/mem  sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_input/mem \
+	sim:/tb_soc_top/dut/cnn_accel_top_inst/u_bram_weight/mem; log * -r;run -all;" 
 
 clean:
 	rm -rf build

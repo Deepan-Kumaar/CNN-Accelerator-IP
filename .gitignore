@@ -1,6 +1,8 @@
 # Build artifacts
 build/
 docs/
+sw/outputs
+
 
 # Simulation artifacts
 transcript
@@ -38,3 +40,4 @@ rtl/instr_mem.hex
 
 # Test vectors (generated)
 tb/vectors/
+wlftpzPzL1
