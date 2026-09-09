@@ -1,7 +1,7 @@
 # CNN Accelerator IP
 
 > **⚠️ Project Status: Work in Progress**  
-> This project is currently under active development. Core RTL modules are functional and passing simulation, but several key features (software driver, im2col address generator, per-tile requantization, FPGA bring-up) are not yet implemented. See [Project Status & Roadmap](#project-status--roadmap) for details.
+> This project is currently under active development. Core RTL modules are functional and passing simulation, but several key features (software driver, im2col address generator, per-tile requantization, FPGA bring-up) are not yet implemented. ALL FILES HAVE NOT BEEN COMMITED YET OR FILES IN COMMIT MIGHT NOT BE COMPLETE.
 
 A memory-mapped Convolutional Neural Network (CNN) accelerator IP integrated into a RISC-V SoC built around the [lowRISC Ibex](https://github.com/lowRISC/ibex) core. The accelerator provides an INT8/INT16 quantized MAC datapath with ReLU and 2×2 max-pooling, on-chip input/weight/output buffers, and an AXI4-Lite control plane, connected to the rest of the SoC through a PULP `axi_xbar`.
 
